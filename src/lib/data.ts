@@ -102,93 +102,93 @@ export const stories: Story[] = [
 export const apps: App[] = [
   {
     id: '1',
+    name: 'Python',
+    category: 'Programming',
+    icon: 'Code',
+    description: 'My primary programming language for data analysis, machine learning, and automation scripts.',
+    link: 'https://python.org',
+    color: '#3776AB'
+  },
+  {
+    id: '2',
+    name: 'SQL',
+    category: 'Database',
+    icon: 'Database',
+    description: 'Essential for querying and managing relational databases in data analysis projects.',
+    link: 'https://postgresql.org',
+    color: '#336791'
+  },
+  {
+    id: '3',
+    name: 'Tableau',
+    category: 'Visualization',
+    icon: 'BarChart3',
+    description: 'Powerful business intelligence tool for creating interactive dashboards and data visualizations.',
+    link: 'https://tableau.com',
+    color: '#E97627'
+  },
+  {
+    id: '4',
+    name: 'Power BI',
+    category: 'Visualization',
+    icon: 'BarChart',
+    description: 'Microsoft\'s business analytics tool for creating reports and dashboards.',
+    link: 'https://powerbi.microsoft.com',
+    color: '#F2C811'
+  },
+  {
+    id: '5',
+    name: 'Excel',
+    category: 'Spreadsheet',
+    icon: 'FileSpreadsheet',
+    description: 'Advanced spreadsheet tool for data analysis, pivot tables, and quick visualizations.',
+    link: 'https://microsoft.com/excel',
+    color: '#217346'
+  },
+  {
+    id: '6',
     name: 'Figma',
     category: 'Design',
     icon: 'Figma',
-    description: 'Figma is my design tool of choice. I do every design work from planning, ui design to creating beautiful illustrations',
+    description: 'Design tool for UI/UX design and creating visual assets for projects.',
     link: 'https://figma.com',
     color: '#F24E1E'
   },
   {
-    id: '2',
-    name: 'Cron',
-    category: 'Productivity',
-    icon: 'Calendar',
-    description: 'Cron is the next-generation calendar for professionals and teams.',
-    link: 'https://cron.com',
-    color: '#FF6B35'
-  },
-  {
-    id: '3',
-    name: 'Slack',
-    category: 'Communication',
-    icon: 'MessageSquare',
-    description: 'Slack brings team communication and collaboration into one place so you can get more work done.',
-    link: 'https://slack.com',
-    color: '#4A154B'
-  },
-  {
-    id: '4',
-    name: 'VS Code',
-    category: 'Coding',
-    icon: 'Code',
-    description: 'The best and recommended IDE for developing. Very ease to use and have lots of add-ons.',
-    link: 'https://code.visualstudio.com',
-    color: '#007ACC'
-  },
-  {
-    id: '5',
-    name: 'Spotify',
-    category: 'Entertainment',
-    icon: 'Music',
-    description: 'Spotify offers the best music discovery and recommendation app as well as podcast place.',
-    link: 'https://spotify.com',
-    color: '#1DB954'
-  },
-  {
-    id: '6',
-    name: 'Linear',
-    category: 'Productivity',
-    icon: 'LineChart',
-    description: 'Managing the project backlogs',
-    link: 'https://linear.app',
-    color: '#5E6AD2'
-  },
-  {
     id: '7',
-    name: 'Notion',
-    category: 'Productivity',
-    icon: 'FileText',
-    description: 'Notion is an amazing app that helps me stay organized and on top of my tasks.',
-    link: 'https://notion.so',
-    color: '#000000'
+    name: 'Canva',
+    category: 'Design',
+    icon: 'Palette',
+    description: 'User-friendly design tool for creating graphics, presentations, and marketing materials.',
+    link: 'https://canva.com',
+    color: '#00C4CC'
   },
   {
     id: '8',
-    name: 'Discord',
-    category: 'Communication',
-    icon: 'MessageCircle',
-    description: 'The voice and text chat features are top-notch and the app is easy to use.',
-    link: 'https://discord.com',
-    color: '#5865F2'
+    name: 'Adobe Suite',
+    category: 'Design',
+    icon: 'Image',
+    description: 'Comprehensive suite for professional design, including Photoshop, Illustrator, and InDesign.',
+    link: 'https://adobe.com',
+    color: '#FF0000'
   },
   {
     id: '9',
-    name: 'Gumroad',
-    category: 'Indiemaker',
-    icon: 'ShoppingBag',
-    description: 'A great platform for indie makers. With it, you can sell your products and services online with ease.',
-    link: 'https://gumroad.com',
-    color: '#FF90E8'
+    name: 'GitHub',
+    category: 'Version Control',
+    icon: 'Github',
+    description: 'Platform for hosting code repositories, collaboration, and project management.',
+    link: 'https://github.com',
+    color: '#181717'
   },
   {
     id: '10',
-    name: 'Da Vinci',
-    category: 'Video',
-    icon: 'Video',
-    description: 'It\'s an easy-to-use video editing tool that has a lot of great features and it\'s free.',
-    link: 'https://blackmagicdesign.com',
-    color: '#FF6B6B'
+    name: 'Looker Studio',
+    category: 'Visualization',
+    icon: 'BarChart3',
+    description: 'Building cloud-integrated reports for marketing and web data.',
+    link: 'https://lookerstudio.google.com',
+    color: '#4285F4'
   }
 ];
 

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Box, Mail, Palette, Instagram, Linkedin, Github, Dribbble, BookOpen } from 'lucide-react';
-import { socialLinks } from '@/lib/data';
+import { ExternalLink, Box, Mail, Palette, Instagram, Linkedin, Github, BookOpen } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
   Box,
@@ -9,14 +8,19 @@ const iconMap: Record<string, React.ElementType> = {
   Instagram,
   Linkedin,
   Github,
-  Dribbble,
   BookOpen,
 };
 
+const socialLinks = [
+  { name: 'GitHub', url: 'https://github.com/Amit-Shatagar', icon: 'Github' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/amitshetty18', icon: 'Linkedin' },
+  { name: 'Instagram', url: 'https://www.instagram.com/amit_shetty___', icon: 'Instagram' }
+];
+
 const featuredProjectsData = [
-  { name: '3dicons', url: 'https://3dicons.co', icon: 'Box', color: 'from-pink-400 to-rose-500' },
-  { name: 'Designletter', url: 'https://designletter.co', icon: 'Mail', color: 'from-blue-400 to-indigo-500' },
-  { name: 'Illlustrations', url: 'https://illlustrations.co', icon: 'Palette', color: 'from-amber-400 to-orange-500' },
+  { name: 'Trafic Ranger', url: 'https://github.com/Amit-Shatagar/Trafic_Ranger', icon: 'Box', color: 'from-blue-400 to-indigo-500' },
+  { name: 'Revenue Intelligence', url: 'https://github.com/Amit-Shatagar/revenue_intelligence_project', icon: 'Mail', color: 'from-green-400 to-teal-500' },
+  { name: 'Kigen', url: 'https://kigen.design', icon: 'Palette', color: 'from-purple-400 to-pink-500' },
 ];
 
 export function Links() {
@@ -46,27 +50,13 @@ export function Links() {
 
             {/* Name */}
             <h1 className="font-script text-3xl text-text-primary dark:text-text-primary mb-3 relative inline-block">
-              realvjy
+              Amit Shetty
               <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-accent-pink via-accent-purple to-accent-blue rounded-full" />
             </h1>
 
             {/* Bio */}
             <p className="text-text-secondary dark:text-text-secondary text-sm mt-4 leading-relaxed">
-              Design wizard who code <span className="text-accent-purple mx-1">&#10022;</span> Love to create illustration, 3D, XR stuff <span className="text-accent-purple mx-1">&#10022;</span> Now making game
-            </p>
-
-            {/* Studio */}
-            <p className="text-text-muted text-sm mt-2">
-              Currently building what I love{' '}
-              <a
-                href="https://overlayz.studio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent-purple hover:underline font-medium"
-              >
-                @overlayz
-              </a>{' '}
-              studio
+              Data Analyst passionate about transforming raw data into actionable insights. Expertise in Python, SQL, Tableau, and machine learning techniques.
             </p>
           </motion.div>
 
@@ -97,24 +87,6 @@ export function Links() {
               );
             })}
           </motion.div>
-
-          {/* Featured Banner */}
-          <motion.a
-            href="https://handkit.design"
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            whileHover={{ scale: 1.02 }}
-            className="block rounded-xl overflow-hidden mb-8 shadow-lg"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=800&h=300&fit=crop"
-              alt="Ghost Hand Kit"
-              className="w-full h-28 object-cover"
-            />
-          </motion.a>
 
           {/* Featured Projects */}
           <motion.div
@@ -165,7 +137,7 @@ export function Links() {
             </h2>
             <div className="space-y-2.5">
               <motion.a
-                href="https://realvjy.gumroad.com"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, x: -10 }}
@@ -175,28 +147,32 @@ export function Links() {
                 className="flex items-center justify-between p-3.5 bg-background rounded-xl border border-border hover:border-border/80 hover:shadow-sm transition-all group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-pink-100 dark:bg-pink-900/30 flex items-center justify-center text-pink-600 dark:text-pink-400">
-                    <span className="text-sm font-bold">G</span>
+                  <div className="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                    <BookOpen className="w-4 h-4" />
                   </div>
-                  <span className="font-medium text-text-primary text-sm">Gumroad Store</span>
+                  <span className="font-medium text-text-primary text-sm">Projects PPT</span>
                 </div>
                 <ExternalLink className="w-4 h-4 text-text-muted group-hover:text-text-primary transition-colors" />
               </motion.a>
 
-              <motion.div
+              <motion.a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: 0.5 }}
-                className="flex items-center justify-between p-3.5 bg-background rounded-xl border border-border opacity-60"
+                whileHover={{ x: 3 }}
+                className="flex items-center justify-between p-3.5 bg-background rounded-xl border border-border hover:border-border/80 hover:shadow-sm transition-all group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-600 dark:text-orange-400">
-                    <span className="text-xs font-bold">Itch</span>
+                  <div className="w-8 h-8 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+                    <Box className="w-4 h-4" />
                   </div>
-                  <span className="font-medium text-text-primary text-sm">itch.io (Soon)</span>
+                  <span className="font-medium text-text-primary text-sm">Project Files</span>
                 </div>
-                <span className="text-[10px] text-text-muted bg-muted px-2 py-0.5 rounded-full">WIP</span>
-              </motion.div>
+                <ExternalLink className="w-4 h-4 text-text-muted group-hover:text-text-primary transition-colors" />
+              </motion.a>
             </div>
           </motion.div>
 
@@ -208,10 +184,10 @@ export function Links() {
             className="text-center mt-12 pt-8 border-t border-border"
           >
             <p className="text-text-muted text-sm">
-              Website (vjy.me)
+              Website (shetty.me)
             </p>
             <p className="text-text-primary font-medium mt-1 text-sm">
-              &copy; realvjy <span className="text-accent-purple mx-1">&#10022;</span> vijay verma
+              &copy; Amit Shetty <span className="text-accent-purple mx-1">&#10022;</span> Data Analyst
             </p>
           </motion.div>
         </div>

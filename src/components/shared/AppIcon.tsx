@@ -38,6 +38,14 @@ import {
   MousePointer,
   Lightbulb,
   Square,
+  Database,
+  BarChart3,
+  Github,
+  Table,
+  Brain,
+  BarChart,
+  FileSpreadsheet,
+  TrendingUp,
   type LucideIcon,
 } from 'lucide-react';
 import type { App, Device } from '@/types';
@@ -87,6 +95,14 @@ const iconMap: Record<string, LucideIcon> = {
   Mouse: MousePointer,
   Lightbulb,
   Square,
+  Database,
+  BarChart3,
+  Github,
+  Table,
+  Brain,
+  BarChart,
+  FileSpreadsheet,
+  TrendingUp,
 };
 
 interface AppIconProps {
@@ -108,14 +124,21 @@ export function AppIcon({ app, device, index = 0 }: AppIconProps) {
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: index * 0.01 }}
+              animate={{ opacity: 1, scale: 1, y: [0, -3, 0] }}
+              transition={{ 
+                duration: 0.3, 
+                delay: index * 0.01,
+                y: { duration: 3, repeat: Infinity, ease: "easeInOut" }
+              }}
               whileHover={{ scale: 1.08 }}
               className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-muted transition-colors"
             >
               <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center text-white shadow-sm"
-                style={{ backgroundColor: app.color }}
+                className="w-12 h-12 rounded-xl flex items-center justify-center text-white shadow-lg backdrop-blur-sm border border-white/20"
+                style={{ 
+                  backgroundColor: app.color,
+                  boxShadow: `0 0 20px ${app.color}40, 0 0 40px ${app.color}20, 0 0 60px rgba(0,255,255,0.1)`
+                }}
               >
                 <Icon className="w-6 h-6" />
               </div>
@@ -151,7 +174,7 @@ export function AppIcon({ app, device, index = 0 }: AppIconProps) {
         whileHover={{ scale: 1.08 }}
         className="flex flex-col items-center gap-1.5 p-2 rounded-xl hover:bg-muted transition-colors cursor-pointer"
       >
-        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-muted to-border text-text-secondary shadow-sm">
+        <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md text-text-secondary shadow-lg border border-white/20">
           <Icon className="w-6 h-6" />
         </div>
       </motion.div>
