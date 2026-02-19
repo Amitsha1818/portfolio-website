@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { footerLinks } from '@/lib/data';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, Github, Home, Twitter, Instagram, Linkedin } from 'lucide-react';
+
+const iconMap = {
+  Github,
+  Home,
+  Twitter,
+  Instagram,
+  Linkedin
+};
 
 export function Footer() {
   return (
@@ -18,23 +26,42 @@ export function Footer() {
           &copy;2019 - 26, realshetty <span className="mx-1 text-accent-purple">&#10022;</span> Amit Shetty
         </motion.p>
 
-        {/* Links */}
+        {/* Social Links */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-8"
+          className="flex justify-center gap-4 mb-8"
         >
-          {footerLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.url}
-              className="text-text-muted text-sm hover:text-text-secondary transition-colors"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {footerLinks.map((link) => {
+            const Icon = iconMap[link.icon as keyof typeof iconMap];
+            const isExternal = link.url.startsWith('https://');
+
+            return isExternal ? (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-text-muted hover:text-text-secondary transition-colors"
+                aria-label={link.name}
+              >
+                {Icon && <Icon className="w-4 h-4" />}
+                <span className="text-sm">{link.name}</span>
+              </a>
+            ) : (
+              <Link
+                key={link.name}
+                to={link.url}
+                className="flex items-center gap-2 text-text-muted hover:text-text-secondary transition-colors"
+                aria-label={link.name}
+              >
+                {Icon && <Icon className="w-4 h-4" />}
+                <span className="text-sm">{link.name}</span>
+              </Link>
+            );
+          })}
         </motion.div>
 
         {/* Tagline */}

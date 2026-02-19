@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Instagram, Linkedin, Github } from 'lucide-react';
+import { Instagram, Linkedin, Github, Brain, BarChart3, FileSpreadsheet, Presentation, PieChart } from 'lucide-react';
 
 const socialLinks = [
   { name: 'GitHub', url: 'https://github.com/Amitsha1818', icon: Github },
@@ -98,12 +98,12 @@ High-performing Data Analyst currently driving business intelligence for Apple's
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
           className="mt-10 overflow-hidden"
         >
           <div className="relative flex whitespace-nowrap">
             <motion.div
-              className="flex gap-12"
+              className="flex gap-14"
               animate={{ x: [0, -1200] }}
               transition={{
                 x: {
@@ -114,35 +114,45 @@ High-performing Data Analyst currently driving business intelligence for Apple's
                 },
               }}
             >
-              <span className="text-lg font-extrabold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <Brain className="w-5 h-5 text-purple-600" />
                 Artificial Intelligence
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <BarChart3 className="w-5 h-5 text-blue-600" />
                 Data Analyst
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-green-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-green-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <FileSpreadsheet className="w-5 h-5 text-green-600" />
                 Microsoft Excel
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-orange-600 via-red-500 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-orange-600 via-red-500 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <Presentation className="w-5 h-5 text-orange-600" />
                 Microsoft PowerPoint
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <PieChart className="w-5 h-5 text-indigo-600" />
                 Power BI
               </span>
               {/* Duplicate for seamless loop */}
-              <span className="text-lg font-extrabold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <Brain className="w-5 h-5 text-purple-600" />
                 Artificial Intelligence
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <BarChart3 className="w-5 h-5 text-blue-600" />
                 Data Analyst
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-green-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-green-600 via-emerald-500 to-teal-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <FileSpreadsheet className="w-5 h-5 text-green-600" />
                 Microsoft Excel
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-orange-600 via-red-500 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-orange-600 via-red-500 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <Presentation className="w-5 h-5 text-orange-600" />
                 Microsoft PowerPoint
               </span>
-              <span className="text-lg font-extrabold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+              <span className="flex items-center gap-2 text-lg font-extrabold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+                <PieChart className="w-5 h-5 text-indigo-600" />
                 Power BI
               </span>
             </motion.div>

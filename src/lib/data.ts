@@ -3,22 +3,22 @@ import type { Project, Story, App, TimelineEvent, Device } from '@/types';
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Project Artist and Cat',
+    title: 'Trafic Ranger',
     year: '2025',
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=400&fit=crop',
-    link: 'https://www.youtube.com/watch?v=PtHrV0IhhWE',
+    link: 'https://github.com/Amit-Shatagar/Trafic_Ranger',
     status: 'wip',
-    description: 'A tiny cozy game about artist and his cat',
-    category: 'project'
+    description: 'AI-based traffic monitoring platform delivering real-time violation detection and analytical dashboards. Role: Data Analysis + Web Development.',
+    category: 'work'
   },
   {
     id: '2',
-    title: 'Figma 2025',
+    title: 'revenue_intelligence',
     year: '2025',
     image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=400&fit=crop',
-    link: 'https://vjy.me/figma-2025',
+    link: 'https://github.com/Amit-Shatagar/revenue_intelligence_project',
     status: 'new',
-    description: 'Config Agenda Poster for 2025 event',
+    description: 'Developed an end-to-end revenue analytics system that ingests raw sales data and converts it into actionable insights, real-time KPIs, and leadership dashboards—helping businesses spot growth opportunities and optimize revenue strategy.',
     category: 'work'
   },
   {
@@ -29,25 +29,7 @@ export const projects: Project[] = [
     link: 'https://kigen.design',
     status: 'new',
     description: 'Figma plugin to generate design system variables and styles',
-    category: 'project'
-  },
-  {
-    id: '4',
-    title: 'Cool Shapes',
-    year: '2024',
-    image: 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=400&h=400&fit=crop',
-    link: 'https://coolshap.es',
-    description: 'Cool abstract shapes for visual design',
-    category: 'project'
-  },
-  {
-    id: '5',
-    title: 'Ghost Hand Kit',
-    year: '2023-now',
-    image: 'https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=400&h=400&fit=crop',
-    link: 'https://vjy.me/hand',
-    description: 'Hand Gestures for AR/VR design experience',
-    category: 'project'
+    category: 'work'
   },
   {
     id: '6',
@@ -57,17 +39,7 @@ export const projects: Project[] = [
     link: 'https://3dicons.co',
     status: 'v2',
     description: 'Beautifully Crafted Open-source 3dicons library',
-    category: 'project'
-  },
-  {
-    id: '7',
-    title: 'Distort',
-    year: '2025',
-    image: 'https://images.unsplash.com/photo-1618556450994-a6a128ef0d9d?w=400&h=400&fit=crop',
-    link: 'https://distort.app',
-    status: 'new',
-    description: 'Figma plugin to distort the shape like pucker & Bloat of illustrator',
-    category: 'project'
+    category: 'work'
   },
   {
     id: '8',
@@ -79,16 +51,6 @@ export const projects: Project[] = [
     category: 'work'
   },
   {
-    id: '9',
-    title: 'My Tiny Page',
-    year: '2025',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop',
-    link: 'https://x.com/realvjy/status/1890027365641883981',
-    status: 'wip',
-    description: 'New template for nxt-lnk bio link',
-    category: 'project'
-  },
-  {
     id: '10',
     title: 'Fameo',
     year: '2025',
@@ -96,97 +58,44 @@ export const projects: Project[] = [
     link: '#',
     description: 'Visual Identity and App Design',
     category: 'work'
-  },
-  {
-    id: '11',
-    title: 'Animate it',
-    year: '2025',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=400&fit=crop',
-    link: 'https://s.vjy.me/project-animate',
-    description: 'Figma plugin to quickly create smart components',
-    category: 'project'
-  },
-  {
-    id: '12',
-    title: 'ClickUp',
-    year: '2025',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=400&fit=crop',
-    link: 'https://clickup.com',
-    description: 'More details soon',
-    category: 'work'
   }
 ];
 
 export const stories: Story[] = [
   {
     id: '1',
-    title: 'Artist & Cat | Devlog #3',
-    date: 'Feb 15, 2026',
-    category: 'Devlog',
-    link: 'https://story.vjy.me/76'
+    title: 'National Cadet Corps | Vlog',
+    date: 'Feb 27, 2022',
+    category: 'Traine',
+    link: 'https://story.shetty.me'
   },
   {
     id: '2',
-    title: 'A Beginning Without Certainty',
-    date: 'Jan 30, 2026',
-    category: 'Blog',
-    link: 'https://story.vjy.me/75'
+    title: 'Lance Corporal @NCC | TeamLead',
+    date: 'July 30, 2022',
+    category: 'Lead',
+    link: 'https://story.shetty.me'
   },
   {
     id: '3',
-    title: 'Artist & Cat | Devlog #2',
-    date: 'Jan 26, 2026',
-    category: 'Devlog',
-    link: 'https://story.vjy.me/74'
+    title: 'Thrift Store | Startup',
+    date: 'Aug 08, 2023',
+    category: 'Startup',
+    link: 'https://story.shetty.me'
   },
   {
     id: '4',
-    title: 'Why Your First Launch Will Feel Like Failure',
-    date: 'Jan 19, 2026',
-    category: 'Blog',
-    link: 'https://story.vjy.me/73'
+    title: 'University Gold Meliest | BCA',
+    date: 'July, 2024',
+    category: 'GoldMedlist',
+    link: 'https://story.shetty.me'
   },
   {
     id: '5',
-    title: 'Unsure, But Still Curious',
-    date: 'Jan 6, 2026',
-    category: 'Blog',
-    link: 'https://story.vjy.me/72'
-  },
-  {
-    id: '6',
-    title: 'Artist & Cat | Devlog #1',
-    date: 'Jan 5, 2026',
-    category: 'Devlog',
-    link: 'https://story.vjy.me/71'
-  },
-  {
-    id: '7',
-    title: 'The Rise of Creators Who Create Nothing',
-    date: 'Dec 22, 2025',
-    category: 'Blog',
-    link: 'https://story.vjy.me/70'
-  },
-  {
-    id: '8',
-    title: 'Progress Without the Noise',
-    date: 'Dec 18, 2025',
-    category: 'Blog',
-    link: 'https://story.vjy.me/69'
-  },
-  {
-    id: '9',
-    title: 'Artist & Cat | Devlog #0',
-    date: 'Dec 17, 2025',
-    category: 'Devlog',
-    link: 'https://story.vjy.me/68'
-  },
-  {
-    id: '10',
-    title: 'Expedition 33 Shows What Care Looks Like',
-    date: 'Dec 12, 2025',
-    category: 'Insight',
-    link: 'https://story.vjy.me/67'
+    title: 'Tata Consultancy Services | Journey with TCS',
+    date: 'Nov 07, 2024',
+    category: 'Professional',
+    link: 'https://story.shetty.me'
   }
 ];
 
@@ -299,50 +208,38 @@ export const devices: Device[] = [
 export const timelineEvents: TimelineEvent[] = [
   {
     id: '1',
-    date: 'Dec 22, 2025',
-    title: 'Rebranding designletter to Sidenotes',
-    description: 'Designletter name changing to Sidenotes, to cover more than just design topics and works as a personal newsletter and blog to share wide variety of topics.',
-    tags: ['newsletter'],
-    link: 'https://realvjy.substack.com'
+    date: 'Aug 08, 2023 - Jan 02, 2024',
+    title: 'Thrift Store | Entrepreneurship',
+    description: 'Started and managed my own thrift store startup. Successfully established the business, managed operations, and achieved profitability. Made the strategic decision to focus on career development in the IT field, leading to the closure of the venture to pursue professional growth opportunities.',
+    tags: ['entrepreneurship', 'startup', 'business']
   },
   {
     id: '2',
-    date: 'Dec 17, 2025',
-    title: 'Project Artist and Cat | Devlog #0',
-    description: 'Posted first devlog of Artist and Cat on YouTube',
-    tags: ['youtube', 'devlog'],
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=340&fit=crop',
-    link: 'https://www.youtube.com/watch?v=PtHrV0IhhWE'
+    date: 'Mar 01, 2023 - May 01, 2023',
+    title: 'Roku Taxi | Digital Marketing Internship',
+    description: 'Completed a digital marketing internship at Roku Taxi, gaining hands-on experience in digital marketing strategies, social media management, content creation, and campaign analysis. Demonstrated strong performance throughout the internship, which led to receiving a job offer letter from the company.',
+    tags: ['internship', 'digital-marketing', 'experience']
   },
   {
     id: '3',
-    date: 'Jul 19, 2025',
-    title: 'Kigen Documentation V2',
-    description: 'Released new version of Kigen documentation with improved UI and more features.',
-    tags: ['release']
+    date: 'Nov 07, 2024 - Feb 01, 2025',
+    title: 'Tata Consultancy Services | Graduate Trainee',
+    description: 'Completed graduate training program at Tata Consultancy Services, gaining comprehensive knowledge in software development, project management, and industry best practices. Participated in various training modules covering technical skills, soft skills, and domain knowledge.',
+    tags: ['work', 'training', 'tcs']
   },
   {
     id: '4',
-    date: 'Jul 7, 2025',
-    title: 'Kigen Color Generator',
-    description: 'Launched new color generator feature in Kigen plugin.',
-    tags: ['release']
-  },
-  {
-    id: '5',
-    date: 'Jun 15, 2025',
-    title: 'Started working on Artist and Cat game',
-    description: 'Began development of my first indie game using Godot engine.',
-    tags: ['devlog']
+    date: 'Feb 01, 2025 - Present',
+    title: 'Tata Consultancy Services | Data Analyst',
+    description: 'Working as a Data Analyst at TCS, focusing on data analysis, business intelligence, and providing actionable insights through data visualization and reporting. Responsible for analyzing large datasets, creating dashboards, and supporting data-driven decision making processes.',
+    tags: ['work', 'data-analysis', 'tcs']
   }
 ];
 
 export const socialLinks = [
-  { name: 'GitHub', url: 'https://github.com/Amitsha1818', icon: 'Github' },
+  { name: 'GitHub', url: 'https://github.com/Amit-Shatagar', icon: 'Github' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/amitshetty18', icon: 'Linkedin' },
-  { name: 'Instagram', url: 'https://www.instagram.com/amit_shetty___', icon: 'Instagram' },
-  { name: 'Dribbble', url: 'https://dribbble.com/realvjy', icon: 'Dribbble' },
-  { name: 'Medium', url: 'https://realvjy.medium.com', icon: 'BookOpen' }
+  { name: 'Instagram', url: 'https://www.instagram.com/amit_shetty___', icon: 'Instagram' }
 ];
 
 export const featuredProjects = [
@@ -352,10 +249,9 @@ export const featuredProjects = [
 ];
 
 export const footerLinks = [
-  { name: 'links', url: '/links' },
-  { name: 'supporters', url: '#' },
-  { name: 'bookshelf', url: '#' },
-  { name: 'tech stack', url: '/stack' },
-  { name: 'version', url: '#' },
-  { name: 'this uikit', url: '#' }
+  { name: 'GitHub', url: 'https://github.com/Amit-Shatagar', icon: 'Github' },
+  { name: 'Portfolio', url: '/', icon: 'Home' },
+  { name: 'Twitter', url: 'https://twitter.com/amitshetty18', icon: 'Twitter' },
+  { name: 'Instagram', url: 'https://www.instagram.com/amit_shetty___', icon: 'Instagram' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/amitshetty18', icon: 'Linkedin' }
 ];

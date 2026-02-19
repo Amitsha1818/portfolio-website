@@ -4,7 +4,7 @@ import { ProjectCard } from '@/components/shared/ProjectCard';
 import { FilterTabs } from '@/components/shared/FilterTabs';
 import { projects } from '@/lib/data';
 
-const filterOptions = ['All', 'Work', 'Projects'];
+const filterOptions = ['All', 'Work'];
 
 export function WorksGrid() {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -12,7 +12,6 @@ export function WorksGrid() {
   const filteredProjects = projects.filter((project) => {
     if (activeFilter === 'All') return true;
     if (activeFilter === 'Work') return project.category === 'work';
-    if (activeFilter === 'Projects') return project.category === 'project';
     return true;
   });
 

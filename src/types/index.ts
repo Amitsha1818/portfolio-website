@@ -13,7 +13,7 @@ export interface Story {
   id: string;
   title: string;
   date: string;
-  category: 'Devlog' | 'Blog' | 'Insight';
+  category: 'Devlog' | 'Blog' | 'Insight' | 'Traine' | 'Lead' | 'Startup' | 'GoldMedlist' | 'Professional';
   link: string;
 }
 

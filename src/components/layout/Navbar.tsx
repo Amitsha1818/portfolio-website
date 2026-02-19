@@ -49,10 +49,10 @@ export function Navbar() {
       className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4"
     >
       <nav 
-        className={`flex items-center gap-2 px-3 py-2 rounded-full transition-all duration-300 ${
+        className={`flex items-center gap-2 px-4 py-3 rounded-full transition-all duration-300 ${
           scrolled
-            ? 'bg-white/80 dark:bg-black/80 backdrop-blur-xl shadow-nav border border-black/5 dark:border-white/10'
-            : 'bg-white/60 dark:bg-black/60 backdrop-blur-md border border-black/5 dark:border-white/5'
+            ? 'bg-white/70 dark:bg-black/70 backdrop-blur-2xl shadow-nav border border-black/5 dark:border-white/10'
+            : 'bg-white/50 dark:bg-black/50 backdrop-blur-xl border border-black/5 dark:border-white/5'
         }`}
       >
         {/* Logo */}
