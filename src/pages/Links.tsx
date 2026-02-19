@@ -38,8 +38,8 @@ export function Links() {
               transition={{ duration: 0.2 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=192&h=192&fit=crop&crop=face"
-                alt="Vijay Verma"
+                src="src/Pictures/Profile.jpeg"
+                alt="Amit Shetty"
                 className="w-20 h-20 rounded-full object-cover mx-auto border-4 border-white dark:border-gray-800 shadow-lg"
               />
             </motion.div>
